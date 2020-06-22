@@ -1,0 +1,35 @@
+GET http://127.0.0.1:5000/api/products
+
+###
+
+POST http://127.0.0.1:5000/api/products
+Content-Type: application/json
+
+{
+    "name": "Chapatis",
+    "description": "Test Product",
+    "price": 50,
+    "qty": 100
+}
+
+
+###
+
+GET http://127.0.0.1:5000/api/products/5
+
+
+###
+
+PUT http://127.0.0.1:5000/api/products/3
+Content-Type: application/json
+
+{
+    "name": "Beans",
+    "description": "Updated Product to beans",
+    "price": 30,
+    "qty": 130
+}
+
+###
+
+DELETE http://127.0.0.1:5000/api/products/1
